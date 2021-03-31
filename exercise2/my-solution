@@ -1,0 +1,18 @@
+var firstName = "Jair"
+undefined
+var lastName = "Barrios"
+undefined
+var fullName = firstName + lastName
+undefined
+fullName
+"JairBarrios"
+var a = 34;
+undefined
+var b = 21;
+undefined
+a = 2;
+2
+a + b
+23
+var c;
+undefined
