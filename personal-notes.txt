@@ -1,0 +1,194 @@
+Basic Terminal Navigation
+The Terminal is much like the finder, but less pretty. There are just a few basic commands needed to navigate around in Terminal. Using Terminal, we often refer to folders as directories. Check out this Terminal Cheat Sheet for Mac for a more complete list of commands.
+	•	Open up terminal, cmd + space "terminal".
+	•	pwd Figure out which directory you are currently in by "Printing the Working Directory".
+	•	ls List the directories and files inside the current directory.
+	◦	ls -a include hidden files in the list of directories and files. This is helpful when trying to find hidden files like .git or .gitignore
+	•	cd [folder] Go into the folder. e.g. cd Desktop/Developer
+	◦	cd This by itself will navigate all the way out to your Home Directory
+	◦	cd .. Back out to the parent directory of the current directory.
+	•	open [file] Same as "double-clicking" a file or folder in finder.
+	◦	open . Opens the current folder or file in finder or it's default application.
+	•	clear When you need a fresh Terminal window
+Hint If you can't find the path to a file or folder through terminal, search for it using Finder, then drag the file or folder right into your terminal window! If you are trying to change to that directory, you will need to type cd before dragging in the folder.
+
+Git Basic Workflow with GitHub
+
+Setup the Project Folder
+
+pwd
+mkdir projects
+cd projects
+pwd
+
+Creating a Local Git Repository
+Navigate to your Project folder in Terminal.
+
+git init
+
+Use ls -a to list all files including hidden files to check if a .gitignore has already been created.
+
+If there is not an existing .gitignore file, create one.
+touch .gitignore
+
+Add and configure README
+touch README.md
+open README.md
+
+Adding and Committing Changes to Local Repository
+
+Check for any changes that have been made to files since your last commit
+
+git status
+
+Stage any files with changes you'd like to commit.
+
+git add [filepath] # This adds an individual file
+git add . # This adds all files with changes
+
+Apply the changes to your local Git repository with a message briefly outlining the changes you made.
+
+git commit -m "Here is my commit message"
+
+Linking to a Remote Repository
+
+Repository URLs There are two types of repository URLs, HTTPS and SSH:
+
+HTTPS: https://github.com/homer/duff_project.git
+SSH: git@github.com:homer/duff_project.git
+
+The general workflow is the same for both URLs, but there are some differences in the specifics of commands.
+
+SSH Setup
+You'll first need to register your machine's SSH keys with your Github account. You only need to perform this step once for each machine you use.
+
+Once you've added your SSH key, the SSH repository URL will look like git@github.com:myusername/reponame.git but for your username and project. You won't need to provide credentials (username/password) for any further git commands.
+
+HTTPS Setup
+
+There is no additional setup required for using HTTPS. However, you'll need to enter your username and password each time you run the git pull or git push commands:
+
+git push origin master
+<enter your username at promt>
+<enter your password at prompt>
+
+push an existing repository from the command line HTTPS Setup
+
+git remote add origin https://github.com/jaydevux/zero-to-mastery-2021.git
+
+git push --set-upstream origin master
+
+
+unable to click always allow on git-credential-osxkeychain popup
+
+This fixed the issue for me:
+	•	Open Keychain Access
+	•	Select Keychains -> login and Category -> Passwords
+	•	Type github.com in search box, you should see an entry (or entries) of Internet Password kind for github.com. Right click & Delete them.
+	•	Go back to terminal and retry the git command that requires the password
+	•	Type in your git username and password when prompted
+	•	Done :)
+
+
+JAVASCRIPT TYPES
+-----------------
+1. Number
+2. String
+3. Boolean
+4. Undefined
+5. Null
+<!-- 6. Symbol (new in ECMAScript 6) -->
+7. Object
+
+JAVASCRIPT COMPARISONS
+-----------------
+
+!==
+===
+>=
+<=
+>
+<
+
+JAVASCRIPT VARIABLES
+-----------------
+var
+<!-- let (new in ECMAScript 6)-->
+<!-- const (new in ECMAScript 6)-->
+
+JAVASCRIPT CONDITIONALS
+-----------------
+if
+else
+else if
+<!-- ternary operator -->
+<!-- switch -->
+
+
+JAVASCRIPT LOGICAL OPERATORS
+-----------------
+&&
+||
+!
+
+JAVASCRIPT FUNCTIONS
+-----------------
+var a = function name() {}
+function name() {}
+return
+<!-- () => (new in ECMAScript 6) -->
+
+JAVASCRIPT DATA STRUCTURES
+-----------------
+Array
+Object
+
+JAVASCRIPT LOOPING
+-----------------
+for
+while
+do
+forEach (new in ECMAScript 5)
+
+
+JAVASCRIPT KEYWORDS
+-----------------
+break
+case
+catch
+class
+const
+continue
+debugger
+default
+delete
+do
+else
+export
+extends
+finally
+for
+function
+if
+import
+in
+instanceof
+new
+return
+super
+switch
+this
+throw
+try
+typeof
+var
+void
+while
+with
+yield
+
+
+
+
+
+
