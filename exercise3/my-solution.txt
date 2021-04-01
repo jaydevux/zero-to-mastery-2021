@@ -2,3 +2,20 @@ var firstNumber = prompt("What is your first number");
 var secondNumber = prompt("What is your second number");
 var sum = Number(firstNumber) + Number(secondNumber);
 alert(sum);
+
+
+BONUS
+
+Basic calculator
+
+var firstNumber = prompt("What is your first number");
+var secondNumber = prompt("What is your second number");
+var sum = Number(firstNumber) + Number(secondNumber);
+var substraction = Number(firstNumber) - Number(secondNumber);
+var division = Number(firstNumber) / Number(secondNumber);
+var multiplication = Number(firstNumber) * Number(secondNumber);
+alert("This is addition result = " + sum);
+alert("This is substraction result = " + substraction);
+alert("This is division result = " + division);
+alert("This is multiplication result = " + multiplication);
+
