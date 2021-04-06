@@ -48,3 +48,16 @@ function checkDriverAge(age) {
 
 checkDriverAge(92);
 
+function rideOrDie(biker) {
+    var biker = prompt("Do you like Motorcycles?");
+    if ( biker === "yes") {
+        return "Live Free Ride Hard";
+    } else if ( biker === "no") {
+        return "It's ok, go and drive your little cage";
+    } else {
+        return "Answer \"yes\" or \"no\" using only lowercase or this script won't work";
+    }
+
+}
+
+rideOrDie();
